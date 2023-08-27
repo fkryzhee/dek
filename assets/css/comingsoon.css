@@ -151,16 +151,14 @@ audio::-webkit-media-controls-mute-button {
 /* Responsif di perangkat mobile */
 @media (max-width: 768px) {
   body {
-    padding: 20px; /* Mengurangi padding pada body untuk tampilan lebih baik di perangkat mobile */
+    padding: 20px;
   }
   
   .content {
-    padding: 20px; /* Mengurangi padding pada konten untuk tampilan lebih baik di perangkat mobile */
+    padding: 20px;
   }
 
   img {
-    width: 200px; /* Mengurangi ukuran gambar agar sesuai dengan layar perangkat mobile */
+    width: 200px;
   }
-
-  /* ... Penyesuaian lainnya sesuai kebutuhan Anda ... */
 }
