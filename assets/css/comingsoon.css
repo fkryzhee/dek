@@ -147,18 +147,3 @@ audio::-webkit-media-controls-volume-slider,
 audio::-webkit-media-controls-mute-button {
   display: none;
 }
-
-/* Responsif di perangkat mobile */
-@media (max-width: 768px) {
-  body {
-    padding: 20px;
-  }
-  
-  .content {
-    padding: 20px;
-  }
-
-  img {
-    width: 200px;
-  }
-}
