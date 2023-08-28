@@ -21,10 +21,6 @@ const countdown = () => {
     document.getElementById('seconds').innerText = seconds;
   }
 
-
-
-
-  
   setInterval(countdown, 1000);
 
   function goToIndex() {
