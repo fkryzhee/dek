@@ -26,10 +26,34 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <style>
+      .preloader-container {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+
+  .preloader img {
+    width: 100px; /* Sesuaikan ukuran gambar sesuai kebutuhan */
+  }
+
+
+  </style>
 
 </head>
 
 <body>
+  <div class="preloader-container" id="loader">
+    <div class="preloader">
+      <img src="assets/loader.gif" alt="Loading...">
+    </div>
+  </div>
 
   <!-- ======= Header ======= -->
   <header id="header" class="header fixed-top">
@@ -797,7 +821,18 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script>
+      document.addEventListener("DOMContentLoaded", function() {
+    // Tampilkan loader saat halaman dimuat
+    document.getElementById("loader").style.display = "flex";
 
+    // Sembunyikan loader setelah halaman terbuka sepenuhnya
+    window.addEventListener("load", function() {
+      document.getElementById("loader").style.display = "none";
+    });
+  });
+
+  </script>
 </body>
 
 </html>
